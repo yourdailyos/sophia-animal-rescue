@@ -1,0 +1,169 @@
+
+/* Twin Cities Animal Rescue - Main Stylesheet */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #24332F;
+    background-color: #F7FAF9;
+}
+
+/* Header and Navigation */
+
+header {
+    background-color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #20D6AA;
+}
+
+header img {
+    max-width: 180px;
+    height: auto;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    padding: 10px 15px;
+    color: #24332F;
+    background-color: #F7FAF9;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background-color: #20D6AA;
+}
+
+/* Main Content */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #20D6AA;
+    padding-bottom: 8px;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 20px 0;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* Forms */
+
+fieldset {
+    border: 1px solid #24332F;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 5px;
+    font: inherit;
+}
+
+button {
+    background-color: #20D6AA;
+    color: #24332F;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    margin: 5px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus-visible {
+    background-color: #F7FAF9;
+    outline: 2px solid #24332F;
+}
+
+/* Footer */
+
+footer {
+    background-color: #24332F;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Larger Screens */
+
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    main {
+        padding: 40px;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
