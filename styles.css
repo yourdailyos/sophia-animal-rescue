@@ -167,3 +167,29 @@ footer {
         font-size: 2.5rem;
     }
 }
+
+
+/* JavaScript Form Validation */
+
+.error-message {
+    display: block;
+    color: #B42318;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+input[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+    border: 2px solid #B42318;
+}
+
+#opportunity-details {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #F7FAF9;
+    border-radius: 6px;
+}
+
+#save-message {
+    font-weight: bold;
+}
